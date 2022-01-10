@@ -18,7 +18,9 @@ export default function MainFbPage(){
                         <button onClick={handleFbLogout} className="logout-btn">Log Out</button>
                     </div>
                 ):(
-                    <p>You arent logged in! Please log in <Link to="/login">here</Link></p>
+                    <div className = "display-div">
+                        <p className = "login-msg">You arent logged in! Please log in <Link to="/login">here</Link></p>
+                    </div>
                 )
             }
         </div>
