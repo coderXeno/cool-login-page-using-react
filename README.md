@@ -1,4 +1,51 @@
-# Getting Started with Create React App
+
+Task 2:-
+
+Feature - Login to website using gmail/facebook or
+Allow users to sign-up to a website using gmail or facebook credential by one click login.
+1. Create a main page with two buttons.
+2. On clicking them, it should authenticate with Fb/ gmail and move to the next page.
+3. Use bootstrap to get started with this task.
+4. Move the final code to your github account and put a link to the Heroku page where the changes can be tested.
+5. Create a readme file and add good documentation on how to run the code
+
+
+So, let me brief the readers of my code a bit about it.
+I was asked to design a login page which would authenticate the user either through Facebook or through Google. It would then after authentication, redirect the user
+to the next page. Well, lets just say I did all that but also added a lot of cool functionality as a bonus.
+
+So let me walk you through my mindset as I was building my site. I personally love ReactJs so there's no other framework I would prefer for building a cool task like
+this. So i went in and created a react app using `create-react-app <app-name>`. It then installed all the required dependencies, created the package files and had me
+get started in a matter of under 2 minutes. (Another cool feature of React). 
+
+Going into the src folder, I deleted ALL files in there. I then made an `index.html` which would contain my basic html markup,a `style.css` which would be my main 
+stylesheet and an `index.js` file which would be rendering the main App component of my web app. The next file was `App.js` which would be rendering all my components
+that I include in my app. As a React developer, I like to break down a web application into smaller components through React, which makes development and debugging 
+a LOT easier. 
+
+So I made a separate component for my Login Page that would contain all my authentication logic(Google and Facebook), two separate components for when a user logs in through
+Facebook, and the other if user logs in through Google. I coded my app in a way that, it would display the name, and the profile picture of the user when they have logged in
+through Google. For the Facebook login however, I kept things simple, and just displayed a message saying "You have successfully logged in through Facebook" when the user is
+able to authenticate successfully.
+
+I have used [react-google-login](https://www.npmjs.com/package/react-google-login) and [react-facebook-login](https://www.npmjs.com/package/react-facebook-login) packages 
+for building the authentication logic. 
+
+Now I built the logic so as to let the user get redirected when they log in. Well, this calls for some cool functionality to be added, and that is the concept of 
+Protected Routes. I cant let the user manipulate their browser url of my site to go into the routes meant for after logging in, without logging in first. However,
+I made things a bit simpler by building logic such that even if they went into that route without logging in, they wont be able to see anything as well as they 
+would be prompted back to the login page by displaying a message `You are not logged in! You can log in` [here](and a link to that login route).
+
+Well I also added logout buttons for both google and facebook authentications to make it cooler. I have added some visually soothing CSS styling.
+However, I havent used Bootstrap since I like to do my styling myself.
+
+Hope that I have been able to explain how my code works in a lucid and clear way. 
+If you face any problems while running the code, you can contact me [here](diptangsu.burd@gmail.com)
+
+
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
