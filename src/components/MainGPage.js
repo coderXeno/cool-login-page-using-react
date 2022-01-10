@@ -16,7 +16,9 @@ export default function MainPage(){
                 <p className="login-name">You have succesfully logged in as {gData.name}!</p>
                 <button onClick={handleLogout} className="logout-btn">Log Out</button>
             </div>):(
-                <p>You arent logged in! Please log in <Link to="/login">here</Link></p>
+                <div className = "display-div">
+                    <p className = "login-msg">You arent logged in! Please log in <Link to="/login">here</Link></p>
+                </div>
             )}
         </div>
     )
