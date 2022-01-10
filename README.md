@@ -39,6 +39,8 @@ would be prompted back to the login page by displaying a message `You are not lo
 Well I also added logout buttons for both google and facebook authentications to make it cooler. I have added some visually soothing CSS styling.
 However, I havent used Bootstrap since I like to do my styling myself.
 
+I also added an error page which the app will return if it cant find the route that the user typed in as the url.
+
 Hope that I have been able to explain how my code works in a lucid and clear way. 
 If you face any problems while running the code, you can contact me [here](diptangsu.burd@gmail.com)
 
